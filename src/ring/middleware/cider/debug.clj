@@ -12,7 +12,8 @@
   leaves the global state alone (as it should), and therefore break points work
   correctly."
   [handler]
-  (let [*skip-breaks* (delay (ns-resolve 'cider.nrepl.middleware.debug '*skip-breaks*))]
+  (let [*skip-breaks* (delay (try (ns-resolve 'cider.nrepl.middleware.debug '*skip-breaks*)
+                                  (catch Exception _)))]
     (fn
       ([request]
        (if @*skip-breaks*
