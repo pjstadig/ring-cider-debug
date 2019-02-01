@@ -8,7 +8,7 @@ As of CIDER 0.20, when code instrumented for CIDER debugging is called outside o
 
 Acquire from your favorite maven repo:
 
-`[ring-cider-debug "0.1.0"]`
+`[ring-cider-debug "0.1.1"]`
 
 Add to your development handler middleware as usual.
 
