@@ -1,4 +1,4 @@
-(defproject ring-cider-debug "0.1.1"
+(defproject ring-cider-debug "0.1.2-SNAPSHOT"
   :description "Establishes---in your development ring handler---thread local
  bindings necessary for CIDER debugging."
   :url "http://github.com/pjstadig/ring-cider-debug/"
